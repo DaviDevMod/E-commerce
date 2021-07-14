@@ -1,0 +1,25 @@
+.price {
+  display: block;
+  font-weight: 500;
+  color: #b12704;
+  margin: 0.5em 0;
+}
+
+.description {
+  margin-top: 1em;
+}
+
+.image {
+  flex: 0 0 19rem;
+  order: 2;
+}
+
+.info {
+  margin: 0 1em;
+}
+
+@media (min-width: 768px) {
+  .image {
+    order: unset;
+  }
+}

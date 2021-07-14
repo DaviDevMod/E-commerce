@@ -1,0 +1,31 @@
+.spinner {
+  position: fixed;
+  top: 40vh;
+  left: calc(50vw - 32px);
+}
+
+.spinner:after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #ff9800 transparent;
+  z-index: 100;
+  animation: spinner 0.65s linear infinite;
+}
+
+@keyframes spinner {
+  0% {
+    border-width: 8px;
+    transform: rotate(360deg);
+  }
+  50% {
+    border-width: 4px;
+  }
+  100% {
+    border-width: 8px;
+    transform: rotate(0deg);
+  }
+}

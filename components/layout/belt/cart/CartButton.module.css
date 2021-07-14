@@ -1,0 +1,58 @@
+.cart_button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+  font: inherit;
+  font-weight: bold;
+  background-color: transparent;
+  color: white;
+  padding: 0.3em 0.5em;
+  border: solid #e4731d;
+  border-radius: 25px;
+}
+
+.cart_button:hover,
+.cart_button:active {
+  background-color: transparent;
+  border-color: #c75600;
+}
+
+.icon {
+  height: 1.5em;
+}
+
+.badge {
+  background-color: #c75600;
+  padding: 0.25em 1em;
+  border-radius: 25px;
+  margin-left: 0.5em;
+  font-weight: bold;
+}
+
+.cart_button:hover .badge,
+.cart_button:active .badge {
+  background-color: #92320c;
+}
+
+.bump {
+  animation: bump 300ms ease-in;
+}
+
+@keyframes bump {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(0.9);
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

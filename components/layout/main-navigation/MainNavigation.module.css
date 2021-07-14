@@ -1,0 +1,10 @@
+.main_nav > ul {
+  font-size: 0.87rem;
+  width: 100%;
+  list-style: none;
+  color: white;
+  background-color: #232f3e;
+  padding: 0.75rem 0;
+  display: flex;
+  justify-content: space-around;
+}

@@ -1,0 +1,20 @@
+.profile_button {
+  position: relative;
+  background-color: transparent;
+  height: 2.6rem;
+  padding: 0;
+  border: none;
+}
+
+.profile_button > span > svg {
+  width: 2.7rem;
+  height: 2.6rem;
+  fill: #3097c0;
+  border: solid 3px #4da8cb;
+  border-radius: 50%;
+}
+
+.profile_button > span > svg:hover {
+  fill: #137faa;
+  border-color: #3097c0;
+}

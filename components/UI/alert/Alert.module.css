@@ -1,0 +1,27 @@
+.alert {
+  display: flex;
+  width: min(25rem, 85%);
+  min-height: 4.5em;
+  background-color: hsla(0, 0%, 100%, 0.4);
+  padding: 1.5em;
+  margin: 1.5rem auto -1.5rem auto;
+  border-radius: 6px;
+  border: solid thin #c40000;
+  box-shadow: 0 0 3px 3px #f6dfdf inset;
+}
+
+.alert_icon {
+  width: 1.5em;
+}
+
+.alert_message {
+  padding: 0.25em 1.5em;
+  padding-right: 0;
+}
+
+.alert_message > span {
+  display: block;
+  font-size: larger;
+  color: #c40000;
+  padding-bottom: 0.5em;
+}

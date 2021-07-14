@@ -1,0 +1,16 @@
+.info_message_inline--on {
+  font-size: smaller;
+  color: white;
+  padding-left: 1.5em;
+}
+
+.info_message_inline--off {
+  display: none;
+}
+
+.info_button {
+  float: right;
+  background-color: transparent;
+  margin-right: 0.2rem;
+  border: none;
+}

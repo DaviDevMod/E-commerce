@@ -1,0 +1,52 @@
+.label {
+  font-weight: bold;
+  color: white;
+}
+
+.input {
+  font: inherit;
+  text-align: left;
+  width: 100%;
+  background-color: hsl(197, 40%, 90%);
+  padding: 0.25rem;
+  border: 1px solid white;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.valid {
+  background-color: #beffbe;
+}
+
+.invalid {
+  border-color: #ff8080;
+  background-color: #ffc2c2;
+}
+
+.input:-webkit-autofill,
+.input:-webkit-autofill:hover,
+.input:-webkit-autofill:focus,
+.input:-webkit-autofill:active,
+.input:-internal-autofill-previewed,
+.input:-internal-autofill-selected {
+  box-shadow: 0 0 0 20px hsl(197, 40%, 90%) inset;
+}
+
+.valid:-webkit-autofill,
+.valid:-webkit-autofill:hover,
+.valid:-webkit-autofill:focus,
+.valid:-webkit-autofill:active,
+.valid:-internal-autofill-previewed,
+.valid:-internal-autofill-selected {
+  box-shadow: 0 0 0 20px #beffbe inset;
+}
+
+.invalid:-webkit-autofill,
+.invalid:-webkit-autofill:hover,
+.invalid:-webkit-autofill:focus,
+.invalid:-webkit-autofill:active,
+.invalid:-internal-autofill-previewed,
+.invalid:-internal-autofill-selected {
+  box-shadow: 0 0 0 20px #ffc2c2 inset;
+}

@@ -1,0 +1,24 @@
+.products {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: unset;
+  overflow: auto;
+}
+
+.related_product {
+  cursor: pointer;
+  flex: 1 0 140px;
+  padding: 0 1.5%;
+}
+
+.related_product > h4 {
+  font-size: 0.95rem;
+  margin: 0.5rem 0;
+}
+
+@media (min-width: 768px) {
+  .products {
+    justify-content: space-around;
+  }
+}

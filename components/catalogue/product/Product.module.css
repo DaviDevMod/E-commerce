@@ -1,0 +1,94 @@
+.product {
+  display: flex;
+  flex-direction: column;
+}
+
+.product > * {
+  margin: 2rem 1rem 0;
+}
+
+.product h2 {
+  margin-bottom: 1em;
+}
+
+.main {
+  display: block;
+}
+
+.order {
+  align-self: center;
+  width: max-content;
+}
+
+.order > h2 {
+  font-size: larger;
+}
+
+.reviews_summary {
+  text-align: center;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .main {
+    display: flex;
+  }
+}
+
+@media (min-width: 960px) {
+  .product {
+    display: grid;
+    min-width: 60rem;
+    grid-template-rows: repeat(4, max-content);
+    grid-template-columns: 2fr 1.5fr 1.5fr 17rem;
+    grid-template-areas:
+      "main    main    main    order"
+      "related related related related"
+      "details details addinfo addinfo"
+      "revsum  reviews reviews reviews";
+  }
+
+  .product > * {
+    margin: 3rem 1rem;
+  }
+
+  .main {
+    grid-area: main;
+  }
+
+  .order {
+    grid-area: order;
+    width: unset;
+    align-self: auto;
+  }
+
+  .related {
+    grid-area: related;
+  }
+
+  .related > h3 {
+    font-size: larger;
+    width: max-content;
+    margin-bottom: 0.75rem;
+  }
+
+  .details {
+    grid-area: details;
+  }
+
+  .additional_info {
+    grid-area: addinfo;
+  }
+
+  .reviews_summary {
+    grid-area: revsum;
+    width: unset;
+    height: max-content;
+  }
+
+  .reviews {
+    grid-area: reviews;
+  }
+}

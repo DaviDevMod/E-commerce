@@ -1,0 +1,12 @@
+.reviews {
+  list-style: none;
+}
+
+.customer_review {
+  margin-bottom: 2rem;
+}
+
+.customer_review > span {
+  display: inline-block;
+  margin: 0.2rem 0;
+}
