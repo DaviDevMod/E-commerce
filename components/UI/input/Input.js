@@ -53,7 +53,7 @@ function Input(props) {
 
   return (
     <div>
-      <label className={classes.label} htmlFor={props.id}>{props.label}</label>
+      <label className={classes.label} htmlFor={props.htmlProps.id}>{props.label}</label>
       {props.showValidation && <InputInfo info={props.info} suggest={blur && !isValid && isTouched} />}
       <input
         {...props.htmlProps}
