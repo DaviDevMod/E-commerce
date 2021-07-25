@@ -51,10 +51,9 @@ async function handler(req, res) {
   }
 
   const newPassHashed = await hash(req.body.newPassword, 12);
-
-  await usersCollection.updateOne({ email: session.user.email }, { $set: { password: newPassHashed } });
-
-  res.status(200).json({ message: 'Password Updated!' });
+  const update = await usersCollection.updateOne({ email: session.user.email }, { $set: { password: newPassHashed } });
+  if (!update.result.ok) res.status(500).json({ error: { message: "We were unable to store the new password. Please try again." } });
+  else res.status(200).json({ message: 'Password Updated!' });
 }
 
 export default handler;

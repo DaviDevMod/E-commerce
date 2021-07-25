@@ -15,13 +15,11 @@ function ProfileMenu(props) {
   const session = useSession()[0];
   const dispatch = useDispatch();
 
-  console.log(session);
-
   const logOutHandler = async () => {
     setIsLoading(true);
     // can't leave the job to `sendBeacon` in Layout.js because by the time
     // the request arrives to the server the user will be logged out
-    // and 'api/user/[cart]' will forbid access to the cart
+    // and 'api/user/cart' will forbid access to the cart
     await sendCartToDb(session.user.email, null, cart);
     dispatch(cartActions.noNeedToSave());
     signOut({ callbackUrl: '/auth' });

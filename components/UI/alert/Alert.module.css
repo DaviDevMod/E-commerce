@@ -19,8 +19,8 @@
   padding-right: 0;
 }
 
-.alert_message > span {
-  display: block;
+.alert_message > h2 {
+  font-weight: normal;
   font-size: larger;
   color: #c40000;
   padding-bottom: 0.5em;

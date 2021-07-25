@@ -11,7 +11,7 @@ import { getCartFromDb, sendCartToDb, mergeTwoCarts } from '../lib/cart';
 function useCartDestiny() {
 
   const [status, setStatus] = useState('');
-  const [dbCart, setDbCart] = useState([]);
+  const [dbCart, setDbCart] = useState({});
   const reduxCart = useSelector(store => store.cart);
 
   const decideCartDestiny = async (email, password, action) => {

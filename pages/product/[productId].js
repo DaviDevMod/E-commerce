@@ -35,7 +35,7 @@ export async function getServerSideProps(context) {
 
   if (!client) return { props: { error: 'The server could not fulfill the request. Please try again.' } };
 
-  const { productId } = context.params;
+  const productId = context.params.productId;
   const stockCollection = client.db().collection('stock');
 
   const product = await stockCollection.findOne(

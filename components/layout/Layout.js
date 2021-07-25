@@ -29,7 +29,7 @@ function Layout(props) {
   useEffect(() => {
     const saveCart = () => {
       try {
-        if (!cart.noNeedToSave && document.visibilityState === 'hidden') {
+        if (document.visibilityState === 'hidden') {
           if (session) {
             const response = navigator.sendBeacon('/api/user/cart/',
               JSON.stringify({
@@ -43,7 +43,7 @@ function Layout(props) {
         }
       } catch (e) { console.log(e); }
     };
-    document.addEventListener('visibilitychange', saveCart);
+    !cart.noNeedToSave && document.addEventListener('visibilitychange', saveCart);
     return () => document.removeEventListener('visibilitychange', saveCart);
   }, [cart, session]);
 

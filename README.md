@@ -48,7 +48,7 @@ That's a dummy e-commerce.
 - [**SVG Backgrounds**](https://www.svgbackgrounds.com/) for the background image
 - [**Vercel**](https://vercel.com/) for deploying
 
-# [Visit Getit here.](https://getit.vercel.app/)
+# [Visit Getit --> getit.vercel.app](https://getit.vercel.app/)
 
 ### Additional info
 
@@ -68,4 +68,4 @@ Thanks to **Next.js** pages are either statically generated at buld time or prer
 This allows search engines to properly crawl and index the site.
 Next.js also comes with built in image optimization and lazy loading.
 
-This web app takes advantage of MongoDB **connection pooling** to get quick access to database and fast server responses.
+This web app takes advantage of MongoDB **connection pooling** to get quick access to the database and fast server responses.
